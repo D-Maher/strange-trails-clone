@@ -9,6 +9,7 @@ body {
   background-color: black;
   background: image-url('Garden_1600px') center fixed;
   background-size: cover;
+  color: white;
   font-size: 100%;
   font-family: 'gotham';
   font-weight: 100;
@@ -20,4 +21,12 @@ body {
   position: relative;
   float: none;
   margin: 0 auto;
+}
+
+.right {
+  float: right;
+}
+
+.home-container {
+  padding-top: 5rem;
 }
