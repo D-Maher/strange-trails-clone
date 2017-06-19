@@ -7,7 +7,7 @@
     <% if !!current_user %>
       <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "right" %>
     <% else %>
-      <%= button_to "Sign In", new_user_session_path, class: "right" %>
+      <%= button_to "Sign In", new_user_session_path, method: :get, class: "submit-btn right" %>
     <% end %>
   </div>
 </nav>

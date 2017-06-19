@@ -1,5 +1,3 @@
-$lt-blue: #33AAFE;
-
 .devise-page-container {
   padding-top: 3rem;
 }
@@ -20,6 +18,10 @@ $lt-blue: #33AAFE;
       &:focus {
         border-bottom: 1px solid $lt-blue;
       }
+    }
+
+    label {
+      color: white;
     }
 
     .actions {
