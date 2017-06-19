@@ -6,6 +6,14 @@
   align-items: center;
   padding: 1rem 0;
 
+  a {
+    color: white;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
   input[type='submit'] {
     background: none;
     padding: .5rem 1rem;
