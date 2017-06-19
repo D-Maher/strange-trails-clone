@@ -1,0 +1,50 @@
+<div class="small-12 columns devise-page-container">
+
+  <div class="small-12 large-6 columns form-container center-block">
+    
+    <div class="form-title-container">
+      <h2 class="text-center">Sign up</h2>
+    </div>
+
+    <div class="row">
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: "lh-form"}) do |f| %>
+        <%= devise_error_messages! %>
+
+        <div class="field">
+          <div class="small-12 medium-6 large-6 columns">
+            <%= f.text_field :first_name, autofocus: true, placeholder: "First Name", autocomplete: "off" %>
+          </div>
+          <div class="small-12 medium-6 large-6 columns">
+            <%= f.text_field :last_name, placeholder: "Last Name", autocomplete: "off" %>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="small-12 columns">
+            <%= f.email_field :email, placeholder: "Email", autocomplete: "off" %>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="small-12 medium-6 large-6 columns">
+            <%= f.password_field :password, autocomplete: "off", placeholder: "Password (#{@minimum_password_length || 6} characters minimum)" %>
+          </div>
+          <div class="small-12 medium-6 large-6 columns">
+            <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: "Confirm password" %>
+          </div>
+        </div>
+
+        <div class="field small-12 columns">
+          <div class="small-12 columns actions">
+            <%= f.submit "Sign up", class: "submit-btn" %>
+            <%= render "devise/shared/links" %>
+          </div>
+        </div>
+
+      <% end %>      
+    </div>
+
+  </div> <!-- form-container -->
+
+</div>
+

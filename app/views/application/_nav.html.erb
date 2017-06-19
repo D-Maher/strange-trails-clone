@@ -1,0 +1,15 @@
+<nav class="small-12 columns nav-bar-container">
+  <div class="small-12 large-6 columns brand-container">
+    <h3 class="text-left"><%= link_to "Strange Trails", root_path %></h3>
+  </div>
+
+  <div class="small-12 large-6 columns">
+    <% if !!current_user %>
+      <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "right" %>
+    <% else %>
+      <%= button_to "Sign In", new_user_session_path, method: :get, class: "submit-btn right" %>
+    <% end %>
+  </div>
+</nav>
+
+<div class="small-12 large-6 nav-bar"></div>
