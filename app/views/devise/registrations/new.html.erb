@@ -12,16 +12,16 @@
 
         <div class="field">
           <div class="small-12 medium-6 large-6 columns">
-            <%= f.text_field :first_name, autofocus: true, placeholder: "First Name" %>
+            <%= f.text_field :first_name, autofocus: true, placeholder: "First Name", autocomplete: "off" %>
           </div>
           <div class="small-12 medium-6 large-6 columns">
-            <%= f.text_field :last_name, placeholder: "Last Name" %>
+            <%= f.text_field :last_name, placeholder: "Last Name", autocomplete: "off" %>
           </div>
         </div>
 
         <div class="field">
           <div class="small-12 columns">
-            <%= f.email_field :email, placeholder: "Email" %>
+            <%= f.email_field :email, placeholder: "Email", autocomplete: "off" %>
           </div>
         </div>
 
